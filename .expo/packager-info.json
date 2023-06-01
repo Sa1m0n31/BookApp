@@ -1,9 +1,9 @@
 {
-  "expoServerPort": 19000,
-  "packagerPort": 19000,
-  "expoServerNgrokUrl": "https://4g-b8j.sa1m0n.bookapp.exp.direct",
-  "packagerNgrokUrl": "https://4g-b8j.sa1m0n.bookapp.exp.direct",
-  "ngrokPid": 11348,
+  "expoServerPort": null,
+  "packagerPort": null,
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null,
   "packagerPid": null,
   "webpackServerPort": null
 }

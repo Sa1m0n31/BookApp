@@ -10,11 +10,12 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import AddNote from "./screens/AddNote";
 
 const Stack = createNativeStackNavigator();
-const Tab = createBottomTabNavigator();
 
 function App() {
   return <NavigationContainer>
-    <Stack.Navigator>
+    <Stack.Navigator screenOptions={{
+      headerShown: false
+    }}>
       <Stack.Screen name={'MainFeed'} component={MainFeed} />
       <Stack.Screen name={'AddBook'} component={AddBook} />
       <Stack.Screen name={'BookDetails'} component={BookDetails} />

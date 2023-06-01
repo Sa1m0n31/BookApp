@@ -1,8 +1,9 @@
 import React from "react";
 import styled from 'styled-components';
-import { View } from "react-native";
+import { View, Text, Dimensions } from "react-native";
 import Carousel from 'react-native-snap-carousel';
 import BookCarouselItem from "./BookCarouselItem";
+import { screenWidth } from "../helpers/dimensions";
 
 const BookCarousel = () => {
   const data = [1, 2, 3, 4, 5, 6, 7, 8];
@@ -13,6 +14,9 @@ const BookCarousel = () => {
     </CarouselHeader>
 
     <Carousel data={data}
+              sliderWidth={screenWidth-60}
+              itemWidth={screenWidth / 2}
+              activeSlideAlignment={'start'}
               renderItem={({item, index}) => (<BookCarouselItem item={item} />)} />
   </Container>
 }
